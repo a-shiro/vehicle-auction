@@ -1,0 +1,114 @@
+.menu {
+  padding: 0.5rem 1rem;
+
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+
+  background-color: white;
+}
+
+.menuHeader::before {
+  content: "";
+
+  width: 0.85rem;
+  height: 0.85rem;
+
+  position: absolute;
+  top: 0.9rem;
+
+  border-radius: 50%;
+
+  background: #8d5de7;
+}
+
+.menuHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+}
+
+.menuHeader > h1 {
+  margin-left: 1.5rem;
+}
+
+.menuHeader > button {
+  margin-right: 0.75rem;
+  padding: 0;
+
+  border: none;
+
+  font-size: 2.25rem;
+
+  background-color: transparent;
+  color: black;
+}
+
+.menuList li {
+  margin: 2rem 0 2rem 0.1rem;
+
+  font-size: 1.15rem;
+  font-weight: 500;
+
+  color: #555555;
+}
+
+.menuList button {
+  padding: 0;
+
+  border: none;
+
+  background-color: transparent;
+  color: #555555;
+}
+
+.menuList a:hover,
+.menuList button:hover {
+  color: #333333;
+
+  cursor: pointer;
+}
+
+/* Media Queries */
+
+@media (min-width: 740px) {
+  .menu::before {
+    content: "";
+
+    position: absolute;
+    top: -0.65rem;
+    right: 2.15rem;
+
+    border-left: 0.75rem solid transparent;
+    border-right: 0.75rem solid transparent;
+    border-bottom: 0.75rem solid white;
+  }
+
+  .menu {
+    padding: 0;
+
+    position: absolute;
+    left: -3.5rem;
+    right: -2rem;
+    top: 4rem;
+    bottom: initial;
+
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 50px;
+    border-radius: 0.35rem;
+  }
+
+  .menuHeader {
+    display: none;
+  }
+
+  .menuList li {
+    margin: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .menuList > div {
+    display: none;
+  }
+}
