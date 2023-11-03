@@ -1,0 +1,59 @@
+.menu {
+  padding: 0.5rem 1rem;
+
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+
+  background-color: white;
+}
+
+.menuHeader::before {
+  content: "";
+
+  width: 0.85rem;
+  height: 0.85rem;
+
+  position: absolute;
+  top: 0.85rem;
+
+  border-radius: 50%;
+
+  background: #8d5de7;
+}
+
+.menuHeader {
+  padding-bottom: 1rem;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.menuHeader > h1 {
+  margin-left: 1.5rem;
+}
+
+.menuHeader > button {
+  border: none;
+
+  font-size: 2rem;
+
+  background-color: transparent;
+  color: black;
+}
+
+/* Media Queries */
+@media (min-width: 740px) {
+  .menu {
+    display: none;
+  }
+}
