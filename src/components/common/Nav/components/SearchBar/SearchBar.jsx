@@ -1,16 +1,23 @@
+// Hooks
+import { useState } from "react";
+// Components
+import SearchForm from "./components/SearchForm/SearchForm";
+import SearchResults from "./components/SearchResults/SearchResults";
 // CSS
 import styles from "./SearchBar.module.css";
 
-function SearchForm() {
-  // TODO: Add search functionality with a delay to the database request (refer to clip in phone notes)
+function SearchBar({ componentVisibile }) {
+  const [inputValue, setInputValue] = useState("");
 
   return (
-    <form className={styles.searchForm}>
-      <div>
-        <input placeholder="Search for cars (ex. Jeep, Dodge, Audi)" />
-      </div>
-    </form>
+    <div
+      className={styles.searchBar}
+      data-component-visible={componentVisibile}
+    >
+      <SearchForm inputValue={inputValue} setInputValue={setInputValue} />
+      {inputValue && <SearchResults />}
+    </div>
   );
 }
 
-export default SearchForm;
+export default SearchBar;
