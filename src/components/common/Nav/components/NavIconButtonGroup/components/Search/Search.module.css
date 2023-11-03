@@ -1,0 +1,19 @@
+.searchBtn {
+  border: none;
+
+  background-color: transparent;
+}
+
+.searchBtn > svg {
+  width: 1.75rem;
+  margin-left: 1rem;
+
+  vertical-align: middle;
+}
+
+/* Media Queries */
+@media (min-width: 740px) {
+  .searchBtn {
+    display: none;
+  }
+}
