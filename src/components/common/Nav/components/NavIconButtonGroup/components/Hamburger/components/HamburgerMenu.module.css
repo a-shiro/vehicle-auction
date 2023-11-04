@@ -15,7 +15,7 @@
   height: 0.85rem;
 
   position: absolute;
-  top: 0.9rem;
+  top: 0.85rem;
 
   border-radius: 50%;
 
@@ -23,8 +23,16 @@
 }
 
 .menuHeader {
+  padding-bottom: 2rem;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
   position: relative;
@@ -35,19 +43,16 @@
 }
 
 .menuHeader > button {
-  margin-right: 0.75rem;
-  padding: 0;
-
   border: none;
 
-  font-size: 2.25rem;
+  font-size: 2rem;
 
   background-color: transparent;
   color: black;
 }
 
 .menuList li {
-  margin: 2rem 0 2rem 0.1rem;
+  margin: 0rem 0 2rem 0.1rem;
 
   font-size: 1.15rem;
   font-weight: 500;
@@ -72,7 +77,6 @@
 }
 
 /* Media Queries */
-
 @media (min-width: 740px) {
   .menu::before {
     content: "";
@@ -90,13 +94,15 @@
     padding: 0;
 
     position: absolute;
-    left: -3.5rem;
+    left: -3rem;
     right: -2rem;
-    top: 4rem;
+    top: 4.5rem;
     bottom: initial;
 
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 50px;
     border-radius: 0.35rem;
+
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 50px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 50px;
   }
 
   .menuHeader {
@@ -105,10 +111,11 @@
 
   .menuList li {
     margin: 1.5rem;
+
     font-size: 1rem;
   }
 
-  .menuList > div {
+  [data-auth="false"] {
     display: none;
   }
 }
