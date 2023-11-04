@@ -12,10 +12,3 @@
 
   vertical-align: middle;
 }
-
-/* Media Queries */
-@media (min-width: 740px) {
-  [data-active-user="false"] {
-    display: none;
-  }
-}
