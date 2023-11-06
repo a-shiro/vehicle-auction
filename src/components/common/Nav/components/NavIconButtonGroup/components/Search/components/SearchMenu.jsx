@@ -9,7 +9,7 @@ function SearchMenu({ toggleMenu }) {
   useViewportResize(toggleMenu);
 
   return (
-    <div className={styles.menu}>
+    <div data-link-key="search" className={styles.menu}>
       <header className={styles.menuHeader}>
         <h1>Search</h1>
         <button onClick={toggleMenu}>×</button>

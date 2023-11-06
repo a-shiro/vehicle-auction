@@ -20,7 +20,11 @@ function Notifications() {
   return (
     <Fragment>
       {/* TODO: Add notification bubble to indicate amount that user has */}
-      <button onClick={toggleMenu} className={styles.notificationsBtn}>
+      <button
+        data-link-key="notificationsMenu"
+        onClick={toggleMenu}
+        className={styles.notificationsBtn}
+      >
         <NotificationIcon />
       </button>
 

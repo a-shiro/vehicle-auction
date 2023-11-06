@@ -7,7 +7,7 @@ import HamburgerMenu from "./components/HamburgerMenu";
 // CSS
 import styles from "./Hamburger.module.css";
 
-// FIXME: Switching from portrait to landscae on mobile enlarges the anchor tag font size (only when menu is active)
+// FIXME: Switching from portrait to landscape on mobile enlarges the anchor tag font size (only when menu is active)
 
 function Hamburger() {
   const [isMenuActive, setIsMenuActive] = useState(false);
@@ -19,7 +19,11 @@ function Hamburger() {
 
   return (
     <Fragment>
-      <button onClick={toggleMenu} className={styles.hamburgerBtn}>
+      <button
+        data-link-key="hamburgerMenu"
+        onClick={toggleMenu}
+        className={styles.hamburgerBtn}
+      >
         <HamburgerIcon />
       </button>
 
