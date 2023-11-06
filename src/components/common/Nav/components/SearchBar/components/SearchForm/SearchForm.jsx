@@ -1,7 +1,7 @@
 // CSS
 import styles from "./SearchForm.module.css";
 
-function SearchForm({ inputValue, setInputValue }) {
+function SearchForm({ inputValue, setInputValue, setResultsActive }) {
   const onChangeHandler = (e) => {
     setInputValue(e.target.value);
   };
@@ -10,12 +10,17 @@ function SearchForm({ inputValue, setInputValue }) {
     setInputValue("");
   };
 
+  const openResultsList = () => {
+    setResultsActive(true);
+  };
+
   return (
     <form>
       <div className={styles.fieldContainer}>
         <input
           value={inputValue}
           onChange={onChangeHandler}
+          onClick={openResultsList}
           className={styles.searchField}
           type="text"
           placeholder="Search for cars (ex. Jeep, Dodge, Audi)"
