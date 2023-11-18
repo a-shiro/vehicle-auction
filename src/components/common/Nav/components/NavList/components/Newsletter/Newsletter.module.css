@@ -1,0 +1,10 @@
+.newsletterBtn {
+  border: none;
+
+  background-color: transparent;
+  color: #555555;
+}
+
+.newsletterBtn:hover {
+  color: #333333;
+}
