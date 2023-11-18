@@ -1,0 +1,86 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 11;
+
+  background-color: white;
+}
+
+.modal {
+  padding: 0.5rem 1rem;
+}
+
+.modalHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  padding-top: 3rem;
+  margin-bottom: 2rem 0;
+
+  position: relative;
+}
+
+.modalHeader > button {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  border: none;
+
+  font-size: 2rem;
+
+  background-color: transparent;
+  color: #000000;
+}
+
+.modalHeader > svg {
+  width: 3.5rem;
+}
+
+.modalHeader > h1 {
+  margin: 1rem 0;
+
+  font-size: 1.85rem;
+}
+
+.modalBody {
+  text-align: center;
+}
+
+.modalBody > p {
+  line-height: 1.5rem;
+}
+
+/* Media Queries */
+@media (min-width: 740px) {
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .modal {
+    width: 28rem;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    border-radius: 0.35rem;
+
+    background-color: white;
+  }
+
+  .modalHeader > h1 {
+    font-size: 1.65rem;
+  }
+}
