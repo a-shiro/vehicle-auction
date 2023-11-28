@@ -1,0 +1,49 @@
+.thirdPartyAuth {
+  margin: 2.5rem 0 1.5rem 0;
+}
+
+.thirdPartyAuth > button {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 0.35rem;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.thirdPartyAuth svg {
+  width: 1.75rem;
+  height: 1.75rem;
+
+  margin-right: 0.5rem;
+}
+
+.googleBtn {
+  border: 1px solid #eeeef0;
+
+  background-color: white;
+  color: #000000;
+}
+
+.appleBtn {
+  margin: 1rem 0;
+
+  border: 1px solid black;
+
+  background-color: #000000;
+  color: white;
+}
+
+.facebookBtn {
+  border: 1px solid #1877f2;
+
+  background-color: #1877f2;
+  color: white;
+}
