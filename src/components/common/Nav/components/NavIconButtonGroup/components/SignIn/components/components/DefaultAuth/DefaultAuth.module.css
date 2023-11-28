@@ -1,0 +1,74 @@
+.defaultAuth {
+  margin-top: 2rem;
+}
+
+.authForm label {
+  margin-bottom: 0.5rem;
+
+  display: block;
+
+  text-align: start;
+}
+
+.authForm input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+
+  border: 1px solid #acacac;
+  border-radius: 0.35rem;
+}
+
+.authForm input:focus {
+  border-color: rgb(100, 100, 100);
+  outline: none;
+}
+
+.passwordContainer {
+  position: relative;
+}
+
+.passwordContainer > button {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  position: absolute;
+  top: 0.45rem;
+  right: 0.65rem;
+
+  background-color: transparent;
+  border: none;
+
+  outline: none;
+}
+
+.passwordContainer svg {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  fill: #cbcbcb;
+}
+
+.authForm > button {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  border: 1px solid #8d5de7;
+  border-radius: 0.35rem;
+
+  font-weight: 500;
+
+  color: white;
+  background-color: #8d5de7;
+}
