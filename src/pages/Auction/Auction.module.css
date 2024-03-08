@@ -11,37 +11,14 @@
 @media (min-width: 775px) {
   .cardList {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .cardList::after {
-    content: "";
-    flex-basis: 30%;
-  }
-
-  .cardList > li {
-    width: 30%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1.25rem;
   }
 }
 
 @media (min-width: 1175px) {
-  .cardList > li {
-    width: 23%;
-  }
-
-  .cardList::after {
-    flex-basis: 23%;
-  }
-}
-
-@media (min-width: 1475px) {
-  .cardList > li {
-    width: 19%;
-  }
-
-  .cardList::after {
-    flex-basis: 19%;
+  .cardList {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
