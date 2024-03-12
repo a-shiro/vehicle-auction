@@ -1,16 +1,13 @@
 // Components
 import { Link } from "react-router-dom";
+import CarFilters from "./components/CarFilters/CarFilters";
 // CSS
 import styles from "./Filters.module.css";
 
 function Filters() {
   return (
     <div className={styles.container}>
-      <div className={styles.carFilters}>
-        <button>Years</button>
-        <button>Transmission</button>
-        <button>Body Style</button>
-      </div>
+      <CarFilters />
 
       <ul className={styles.auctionFilters}>
         <li>
