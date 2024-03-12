@@ -1,0 +1,74 @@
+.carFilters {
+  display: flex;
+  margin-bottom: 1rem;
+  gap: 0.5rem;
+}
+
+.widget {
+  position: relative;
+}
+
+.widget > button {
+  padding: 0.5rem 0.5rem;
+  border: 1px solid gray;
+  border-radius: 0.25rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  background-color: transparent;
+  color: #333333;
+}
+
+.widget > button::after {
+  content: url(../../../../../../assets/svgs/down-arrow.svg);
+  margin-left: 0.5rem;
+}
+
+.dropdown {
+  width: 100%;
+  margin-top: 0.25rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  z-index: 1;
+  font-size: 0.9rem;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px;
+}
+
+.dropdown.year {
+  width: 150%;
+}
+
+.dropdown.bodyStyle {
+  width: 130%;
+}
+
+.year > div {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.year input {
+  padding: 0.25rem;
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 0.25rem;
+}
+
+.year span {
+  margin: 0 0.5rem;
+}
+
+.transmission > button,
+.bodyStyle > button {
+  margin: 1rem;
+  border: none;
+  display: flex;
+  background-color: transparent;
+}
+
+@media (min-width: 775px) {
+  .carFilters {
+    margin-bottom: 0;
+  }
+}
